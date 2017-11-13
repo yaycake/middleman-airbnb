@@ -1,0 +1,21 @@
+---
+title: Le Wagon - Middleman - Team
+---
+
+<ul class="list-inline text-center">
+  <% data.users.each do |user| %>
+    <li>
+      <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{user}", class: "img-circle" %>
+      <h3><%= user.capitalize %></h3>
+    </li>
+  <% end %>
+</ul>
+
+<!-- <div class="container">
+  <div class="row">
+    <span class="col-xs-12 col-md-6 col-lg-4">
+
+    </span>
+</div>
+</div>
+ -->
