@@ -46,3 +46,16 @@
 .card-link:hover {
   opacity: 0.1;
 }
+
+.card-team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  font-size: 9px;
+  margin-top: 20px;
+}
