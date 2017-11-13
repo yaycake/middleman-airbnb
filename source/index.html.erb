@@ -2,5 +2,33 @@
 title: Le Wagon - Middleman
 ---
 
-<%= partial "layouts/banner" %>
-<%= partial "layouts/cards" %>
+ <div class="home-flex">
+ <div class="banner-flex">
+ <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/berlin');">
+  <div class="banner-content">
+    <h1>Le Wagon Berlin</h1>
+    <p>Learn to code with us in Berlin</p>
+    <a class="btn btn-primary btn-lg">Start now</a>
+  </div>
+</div>
+</div>
+
+
+ <div class="cards-container">
+  <div class="row">
+    <% data.cities.each do |city| %>
+  <div class="col-xs-6 col-md-4">
+    <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
+      <div class="card-category">LeWagon</div>
+      <div class="card-description">
+        <h2><%= city.city %></h2>
+        <p><%=city.country %></p>
+      </div>
+      <img class = "card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay" alt="">
+      <a class="card-link" href="#"></a>
+    </div>
+  </div>
+    <% end %>
+</div>
+</div>
+</div>

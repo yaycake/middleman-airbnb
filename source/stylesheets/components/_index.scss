@@ -5,3 +5,12 @@
 @import "footer";
 @import "image";
 @import "navbar";
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-flex {
+  flex: 1 0 auto;
+}
